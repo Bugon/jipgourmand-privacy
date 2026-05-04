@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>집구르망 계정 삭제 요청</title>
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard", system-ui, sans-serif;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 32px 20px 80px;
+    line-height: 1.7;
+    color: #1f2937;
+    background: #ffffff;
+  }
+  h1 { font-size: 28px; margin: 0 0 8px; }
+  h2 { font-size: 20px; margin-top: 32px; padding-bottom: 6px; border-bottom: 2px solid #e5e7eb; }
+  p, li { font-size: 15px; }
+  ul, ol { padding-left: 22px; }
+  .meta { color: #6b7280; font-size: 14px; margin-bottom: 24px; }
+  .lang { margin-bottom: 16px; font-size: 14px; }
+  .lang a { color: #5B9970; text-decoration: none; padding: 4px 10px; border: 1px solid #d1d5db; border-radius: 6px; }
+  .lang a.active { background: #5B9970; color: #fff; border-color: #5B9970; }
+  a { color: #5B9970; }
+  .box { background: #f3f4f6; padding: 16px 20px; border-radius: 10px; margin: 16px 0; }
+  .step { margin: 12px 0; padding-left: 8px; border-left: 3px solid #5B9970; }
+</style>
+</head>
+<body>
+
+<div class="lang">
+  <a href="./delete-account.html" class="active">한국어</a>
+  <a href="./delete-account-en.html">English</a>
+</div>
+
+<h1>계정 삭제 요청</h1>
+<p class="meta">앱: 집구르망 (com.jipgourmand.app)</p>
+
+<p>집구르망은 사용자가 자신의 계정과 관련 데이터를 직접 삭제할 수 있는 두 가지 방법을 제공합니다.</p>
+
+<h2>방법 1. 앱 내에서 직접 삭제 (권장)</h2>
+<div class="box">
+  <div class="step"><strong>1.</strong> 집구르망 앱 실행 → 로그인</div>
+  <div class="step"><strong>2.</strong> 하단 탭 <strong>마이페이지</strong> → 우상단 <strong>설정</strong> 아이콘</div>
+  <div class="step"><strong>3.</strong> 하단의 <strong>계정 삭제</strong> 버튼 탭</div>
+  <div class="step"><strong>4.</strong> 안내 다이얼로그에서 <strong>삭제</strong> 확인</div>
+</div>
+<p>이 방법은 즉시 처리되며, 별도 문의 없이 모든 관련 데이터가 영구 삭제됩니다.</p>
+
+<h2>방법 2. 이메일로 요청</h2>
+<p>앱을 이미 삭제했거나 로그인할 수 없는 경우 다음 이메일로 요청해주세요.</p>
+<div class="box">
+  <p><strong>이메일</strong>: <a href="mailto:bugon4713@gmail.com?subject=계정%20삭제%20요청">bugon4713@gmail.com</a></p>
+  <p><strong>제목</strong>: 계정 삭제 요청</p>
+  <p><strong>본문에 포함</strong>:</p>
+  <ul>
+    <li>가입에 사용한 이메일 주소 또는 닉네임</li>
+    <li>가입 방식 (Google 로그인 / Apple 로그인)</li>
+  </ul>
+</div>
+<p>이메일 접수 후 영업일 기준 7일 이내 처리합니다. 처리 완료 시 답장으로 통지드립니다.</p>
+
+<h2>삭제되는 데이터</h2>
+<ul>
+  <li>계정 정보 (Firebase Auth 인증 정보)</li>
+  <li>프로필 (닉네임, 프로필 사진, 자기소개)</li>
+  <li>사용자가 작성한 모든 게시물, 댓글, 좋아요, 즐겨찾기</li>
+  <li>식단 계획, 장보기 리스트, 가족 구성원 정보</li>
+  <li>가족 그룹 멤버십 (마지막 멤버일 경우 가족 그룹 데이터 전체 삭제)</li>
+  <li>팔로우 관계, 푸시 알림 토큰, 차단 목록</li>
+</ul>
+
+<h2>보존되는 데이터</h2>
+<ul>
+  <li>익명화된 통계 데이터 (개인 식별 불가)</li>
+  <li>관련 법령에 따라 일정 기간 보관이 의무인 정보 (예: 전자상거래 관련 법령)</li>
+</ul>
+
+<h2>관련 정책</h2>
+<p>자세한 내용은 <a href="./index.html">개인정보 처리방침</a>을 참조해주세요.</p>
+
+</body>
+</html>
