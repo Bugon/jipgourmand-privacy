@@ -55,7 +55,7 @@
     <tr><td>Community posts (photos, captions, hashtags), comments, likes, follow relationships</td><td>While using the community</td><td>User input</td></tr>
     <tr><td>Push notification token (FCM)</td><td>After login (automatic)</td><td>Firebase Cloud Messaging</td></tr>
     <tr><td>Advertising identifier (Android AAID only; not collected on iOS)</td><td>When ads are shown</td><td>OS-standard API</td></tr>
-    <tr><td>Device info (OS, model, app version), crash logs, app analytics</td><td>While using the Service</td><td>Firebase Crashlytics / Analytics</td></tr>
+    <tr><td>Device info (OS, model, app version), crash and performance data</td><td>When ads are shown</td><td>Google Mobile Ads SDK (AdMob)</td></tr>
   </tbody>
 </table>
 
@@ -65,8 +65,7 @@
   <li><strong>Service delivery</strong>: AI-powered family-tailored meal plans, shopping list management, favorite recipes</li>
   <li><strong>Community features</strong>: Posts, comments, likes, follows, reporting/blocking</li>
   <li><strong>Push notifications</strong>: Notify users of new followers, comments, etc. (toggleable in settings)</li>
-  <li><strong>Advertising</strong>: Show ads via AdMob (revenue and AI-call abuse mitigation)</li>
-  <li><strong>Service improvement</strong>: Crash analysis and usage analytics to improve features</li>
+  <li><strong>Advertising</strong>: Serve and measure ads via AdMob (revenue and AI-call abuse mitigation)</li>
 </ul>
 
 <h2>3. Data Retention</h2>
@@ -98,8 +97,7 @@
     <tr><td>Google LLC (Firebase Authentication)</td><td>User authentication</td><td>Email, name, profile picture</td></tr>
     <tr><td>Google LLC (Cloud Firestore, Cloud Storage, Cloud Functions)</td><td>Data storage and backend processing</td><td>Family info, meal plans, posts, photos, etc.</td></tr>
     <tr><td>Google LLC (Firebase Cloud Messaging)</td><td>Push notification delivery</td><td>FCM token</td></tr>
-    <tr><td>Google LLC (Firebase Analytics, Crashlytics)</td><td>Usage analytics, crash reports</td><td>Device info, app usage logs</td></tr>
-    <tr><td>Google LLC (Google AdMob)</td><td>Ad serving and measurement</td><td>Advertising ID, device info</td></tr>
+    <tr><td>Google LLC (Google AdMob)</td><td>Ad serving and measurement</td><td>Device identifier, device info, ad impression data, crash and performance data</td></tr>
     <tr><td>Google LLC (Gemini API)</td><td>AI meal/recipe generation</td><td>Family member info (name, gender, age, nationality, notes, allergies, disliked foods) and your typed requests</td></tr>
     <tr><td>Apple Inc. (Sign in with Apple)</td><td>iOS authentication</td><td>Email, name</td></tr>
   </tbody>

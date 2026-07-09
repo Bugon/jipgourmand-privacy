@@ -56,7 +56,7 @@
     <tr><td>커뮤니티 게시물 (사진, 본문, 해시태그), 댓글, 좋아요, 팔로우 관계</td><td>커뮤니티 이용 시</td><td>사용자 직접 입력</td></tr>
     <tr><td>푸시 알림 토큰 (FCM Token)</td><td>로그인 후 자동</td><td>Firebase Cloud Messaging</td></tr>
     <tr><td>광고 식별자 (Android AAID · iOS는 수집하지 않음)</td><td>광고 노출 시</td><td>OS 표준 API</td></tr>
-    <tr><td>기기 정보 (OS 버전, 기기 모델, 앱 버전), 앱 충돌 로그, 앱 사용 통계</td><td>서비스 이용 중</td><td>Firebase Crashlytics / Analytics</td></tr>
+    <tr><td>기기 정보 (OS 버전, 기기 모델, 앱 버전), 앱 충돌·성능 데이터</td><td>광고 표시 시</td><td>Google Mobile Ads SDK (AdMob)</td></tr>
   </tbody>
 </table>
 
@@ -66,8 +66,7 @@
   <li><strong>서비스 제공</strong>: 가족 맞춤형 AI 식단 생성, 장보기 리스트 관리, 즐겨찾기 레시피 저장</li>
   <li><strong>커뮤니티 기능</strong>: 게시물 작성·열람, 댓글, 좋아요, 팔로우, 신고/차단</li>
   <li><strong>푸시 알림</strong>: 새 팔로워, 댓글 등 사용자 활동 관련 알림 전송 (사용자가 설정에서 끌 수 있음)</li>
-  <li><strong>광고</strong>: AdMob을 통한 광고 노출 (수익화 및 AI 호출 어뷰징 방지)</li>
-  <li><strong>서비스 품질 개선</strong>: 충돌 분석, 사용 통계 기반 기능 개선</li>
+  <li><strong>광고</strong>: AdMob을 통한 광고 노출 및 측정 (수익화 및 AI 호출 어뷰징 방지)</li>
 </ul>
 
 <h2>3. 개인정보의 보유 및 이용 기간</h2>
@@ -99,8 +98,7 @@
     <tr><td>Google LLC (Firebase Authentication)</td><td>회원 인증, 로그인</td><td>이메일, 이름, 프로필 사진</td></tr>
     <tr><td>Google LLC (Cloud Firestore, Cloud Storage, Cloud Functions)</td><td>사용자 데이터 저장 및 처리</td><td>가족 정보, 식단, 게시물, 사진 등</td></tr>
     <tr><td>Google LLC (Firebase Cloud Messaging)</td><td>푸시 알림 발송</td><td>FCM 토큰</td></tr>
-    <tr><td>Google LLC (Firebase Analytics, Crashlytics)</td><td>앱 사용 통계, 충돌 분석</td><td>기기 정보, 앱 사용 로그</td></tr>
-    <tr><td>Google LLC (Google AdMob)</td><td>광고 노출 및 측정</td><td>광고 식별자, 기기 정보</td></tr>
+    <tr><td>Google LLC (Google AdMob)</td><td>광고 노출 및 측정</td><td>기기 식별자, 기기 정보, 광고 노출 데이터, 충돌·성능 데이터</td></tr>
     <tr><td>Google LLC (Gemini API)</td><td>AI 식단/레시피 생성</td><td>가족 구성원 정보 (이름, 성별, 나이, 국적, 소개, 알레르기, 비선호 음식), 사용자가 입력한 요청사항</td></tr>
     <tr><td>Apple Inc. (Sign in with Apple)</td><td>회원 인증 (iOS)</td><td>이메일, 이름</td></tr>
   </tbody>
