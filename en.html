@@ -37,7 +37,7 @@
 </div>
 
 <h1>Jipgourmand Privacy Policy</h1>
-<p class="meta">Effective: May 4, 2026 · Last updated: May 4, 2026</p>
+<p class="meta">Effective: May 4, 2026 · Last updated: July 9, 2026</p>
 
 <p>This Privacy Policy describes how the <strong>Jipgourmand</strong> team (the "Operator") collects, uses, and shares information about users of the mobile application "Jipgourmand" (the "Service").</p>
 
@@ -54,7 +54,7 @@
     <tr><td>Meal plans, shopping lists, favorite recipes</td><td>While using the Service</td><td>User input or AI-generated</td></tr>
     <tr><td>Community posts (photos, captions, hashtags), comments, likes, follow relationships</td><td>While using the community</td><td>User input</td></tr>
     <tr><td>Push notification token (FCM)</td><td>After login (automatic)</td><td>Firebase Cloud Messaging</td></tr>
-    <tr><td>Advertising identifier</td><td>When ads are shown</td><td>OS-standard API</td></tr>
+    <tr><td>Advertising identifier (Android AAID only; not collected on iOS)</td><td>When ads are shown</td><td>OS-standard API</td></tr>
     <tr><td>Device info (OS, model, app version), crash logs, app analytics</td><td>While using the Service</td><td>Firebase Crashlytics / Analytics</td></tr>
   </tbody>
 </table>
@@ -100,20 +100,26 @@
     <tr><td>Google LLC (Firebase Cloud Messaging)</td><td>Push notification delivery</td><td>FCM token</td></tr>
     <tr><td>Google LLC (Firebase Analytics, Crashlytics)</td><td>Usage analytics, crash reports</td><td>Device info, app usage logs</td></tr>
     <tr><td>Google LLC (Google AdMob)</td><td>Ad serving and measurement</td><td>Advertising ID, device info</td></tr>
-    <tr><td>Google LLC (Gemini API)</td><td>AI meal/recipe generation</td><td>Family info (name, allergies, dislikes, etc.)</td></tr>
+    <tr><td>Google LLC (Gemini API)</td><td>AI meal/recipe generation</td><td>Family member info (name, gender, age, nationality, notes, allergies, disliked foods) and your typed requests</td></tr>
     <tr><td>Apple Inc. (Sign in with Apple)</td><td>iOS authentication</td><td>Email, name</td></tr>
   </tbody>
 </table>
 <p>Sub-processors may only use the data for the contracted purpose and must safeguard it according to applicable laws and our instructions.</p>
 
 <h2>6. AI Feature Notice</h2>
-<p>To generate family-tailored meal plans, we send the family information you provide (names, allergies, dislikes, etc.) to the Google Gemini API. Google processes this data per their own policies. We recommend not entering sensitive personal identifiers such as full legal names; nicknames are sufficient.</p>
+<p>To generate family-tailored meal plans and recipes, we send the following information to the Gemini API operated by Google LLC:</p>
+<ul>
+  <li>Each family member's name, gender, age, nationality, notes, allergies, and disliked foods</li>
+  <li>Any request you type when generating a meal plan</li>
+</ul>
+<p>This transfer happens <strong>only after you explicitly consent in the app</strong>. The first time you use an AI feature we show you exactly what will be sent and ask for your consent; without consent, AI features are unavailable. You can withdraw consent at any time under <strong>"Settings → AI data sharing"</strong>, after which we will ask again the next time you use an AI feature.</p>
+<p>The data is used solely to generate meal plans and recipes and is never used for advertising. Google processes this data per their own policies.</p>
 
 <h2>7. Advertising Identifier and Ads</h2>
-<p>The Service shows AdMob (Google) ads, which may use your advertising identifier (AAID/IDFA).</p>
+<p>The Service shows AdMob (Google) ads.</p>
 <ul>
-  <li><strong>Android</strong>: Settings → Google → Ads to reset your advertising ID or opt out of personalized ads.</li>
-  <li><strong>iOS</strong>: Settings → Privacy & Security → Tracking to manage app tracking permissions.</li>
+  <li><strong>Android</strong>: Your advertising identifier (AAID) may be used to serve and measure ads. Go to Settings → Google → Ads to reset your advertising ID or opt out of personalized ads.</li>
+  <li><strong>iOS</strong>: The Service does not request App Tracking Transparency permission and does not collect the advertising identifier (IDFA). We therefore do not track you across other companies' apps and websites, and only non-personalized ads are shown.</li>
 </ul>
 
 <h2>8. Your Rights</h2>
